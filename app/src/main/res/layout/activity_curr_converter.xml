@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CurrConverter">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="From :" />
+
+    <Spinner
+        android:id="@+id/spCurrFrom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/CurrArray"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/etCurrFromAmt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minWidth="32dp"
+        android:minHeight="48dp"
+        tools:ignore="SpeakableTextPresentCheck" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="To :" />
+
+    <Spinner
+        android:id="@+id/spCurrTo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/CurrArray"
+        android:minHeight="48dp" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="ConvertCurr"
+        android:text="Convert !"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvCurrRes"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="goBack"
+        android:layout_marginTop="30dp"
+        android:text="Back !"/>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="346dp"
+        android:text="Choose a currency from the |From Spinner| then enter the ammount you want to convert, then choose the currency you wish to convert to from the |To Spinner| then click on the Convert! button" />
+</LinearLayout>

@@ -1,0 +1,10 @@
+com/example/project_i/BuildConfig.java
+ com.example.project_i.BuildConfig
+com/example/project_i/WeightConverter.java
+ com.example.project_i.WeightConverter
+com/example/project_i/CurrConverter.java
+ com.example.project_i.CurrConverter
+com/example/project_i/MainActivity.java
+ com.example.project_i.MainActivity
+com/example/project_i/TempConverter.java
+ com.example.project_i.TempConverter

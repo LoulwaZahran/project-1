@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Project_I</string>
+
+    <string-array name="CurrArray">
+
+        <item> LBP </item>
+        <item> USD </item>
+        <item> EUR </item>
+    </string-array>
+
+    <string-array name="WeightArray">
+
+        <item> Kilograms </item>
+        <item> Pounds </item>
+    </string-array>
+
+</resources>

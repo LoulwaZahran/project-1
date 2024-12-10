@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".WeightConverter">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="From :" />
+
+    <Spinner
+        android:id="@+id/spWeightFrom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/WeightArray"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/etWeightFromVal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minWidth="32dp"
+        android:minHeight="48dp"
+        tools:ignore="SpeakableTextPresentCheck" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="To :" />
+
+    <Spinner
+        android:id="@+id/spWeightTo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/WeightArray"
+        android:minHeight="48dp" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="ConvertWeight"
+        android:text="Convert !"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvWeightRes"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="goBack"
+        android:layout_marginTop="30dp"
+        android:text="Back !"/>
+</LinearLayout>
